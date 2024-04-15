@@ -1,0 +1,713 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NextLink - Desenvolvimento de Páginas Web</title>
+
+    <meta name="description" content="A NextLink é uma empresa especializada no desenvolvimento de Landing Pages sob medida para empresas e empreendedores. Com uma equipe experiente e qualificada, oferecemos soluções abrangentes, desde a concepção e design até questões como hospedagem e domínio. Nosso compromisso é melhorar a visibilidade e o valor das empresas de nossos clientes na internet, proporcionando uma experiência personalizada e de alta qualidade para atender às suas necessidades específicas no mundo digital." />
+    
+    <meta property="og:image" href="./assets/favicon.png" type="image/png" />
+    <meta property="og:image:secure_url" href="./assets/favicon.png" type="image/png"/>
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:title" content="NextLink - Desenvolvimento de Páginas Web" />
+    <meta property="og:description" content="A NextLink é uma empresa especializada no desenvolvimento de Landing Pages sob medida para empresas e empreendedores. Com uma equipe experiente e qualificada, oferecemos soluções abrangentes, desde a concepção e design até questões como hospedagem e domínio. Nosso compromisso é melhorar a visibilidade e o valor das empresas de nossos clientes na internet, proporcionando uma experiência personalizada e de alta qualidade para atender às suas necessidades específicas no mundo digital." />
+    
+    
+        
+    <link rel="shortcut icon" href="./assets/icone_next_link.png" type="image/png"/>
+    <link rel="apple-touch-icon" href="./assets/icone_next_link.png" type="image/png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/icone_next_link.png">
+
+    
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    
+    <!-- Arquivos CSS do Slick.js -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16500495401"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-16500495401');
+   
+        
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          location.href = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16500495401/U34vCIHbjKIZEKmohrw9',
+          'event_callback': callback
+      });
+      return false;
+    }
+ 
+
+
+    function abrirWhatsApp() {
+        // Verifica se o usuÃ¡rio estÃ¡ acessando a partir de um dispositivo mÃ³vel
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // Abre o link do WhatsApp para celular
+            gtag_report_conversion('https://wa.me/5541999914736?text=Ol%C3%A1%21+Gostaria+de+montar+minha+Pagina+Web%21');
+        } else {
+            // Abre o link do WhatsApp para o computador
+            gtag_report_conversion('https://wa.me/5541999914736?text=Ol%C3%A1%21+Gostaria+de+montar+minha+Pagina+Web%21');
+        }
+    }
+        
+         
+    
+    </script>
+</head>
+
+<body>
+
+    <button class="botao-whatsapp" onclick="abrirWhatsApp()" >
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </button>
+
+    <header>
+        <div class="mobile-header">
+            <img src="./assets/logo.png" alt="">
+            
+            <!-- <div class="buttons_idiomas">
+                <a href="index.html">
+                    <img src="./assets/bandeira-bra.webp" alt="" style="border-radius: 3px;">
+                </a>
+                <a href="eua.html">
+                    <img src="./assets/bandeira-eua.webp" alt="" style="border-radius: 3px;">
+                </a>
+                <a href="esp.html">
+                    <img src="./assets/bandeira-esp.webp" alt="" style="border-radius: 3px;">
+                </a>
+            </div> -->
+
+            <button onclick="abrirWhatsApp()">Fale conosco</button>
+
+        </div>
+
+        <div class="desktop-header">
+            <a href="#landing" class="left">
+                <img src="./assets/logo.png" alt="">
+            </a>
+            <div class="mid">
+                <a href="#motivos">Diferenciais</a>
+                <a href="#nosso-processo">Nosso processo</a>
+                <a href="#depoimentos-clientes">Depoimentos</a>
+                <a href="#nossos-projetos">Portfolio</a>
+            
+
+                <!-- <div class="buttons_idiomas">
+                    <a href="index.html">
+                        <img src="./assets/bandeira-bra.webp" alt="" style="border-radius: 3px;">
+                    </a>
+                    <a href="eua.html">
+                        <img src="./assets/bandeira-eua.webp" alt="" style="border-radius: 3px;">
+                    </a>
+                    <a href="esp.html">
+                        <img src="./assets/bandeira-esp.webp" alt="" style="border-radius: 3px;">
+                    </a>
+                </div> -->
+            </div>
+            <div class="right">
+                <button onclick="abrirWhatsApp()">Fale conosco</button>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    <section id="landing">
+
+        <!-- <div class="video-wrapper">
+            <video autobuffer muted autoplay playsinline loop preload="auto" src="./assets/background-video.webm">
+            </video>
+            <div class="background-overlay"></div>
+        </div> -->
+
+        <div class="div">
+            <div class="card-and-logo">
+                <!-- <img src="./assets/favicon.ico" alt="" class="mobile">
+                <img src="./assets/logo.png" alt="" class="desktop"> -->
+
+            </div>
+
+            <div class="titulo-e-subtitulo">
+                <h1>Transformando Ideias em</h1>
+                <h2>Aplicativos de Sucesso</h2>
+            </div>
+
+            <p id="desenvolvimento-aplicativos">
+                Desenvolvimento de aplicativos
+            </p>
+
+            <p class="text">
+                Dentro de cada um de nós reside uma ideia, um conceito, um sonho esperando para se tornar realidade. Na NextLink, entendemos a importância de transformar essas visões em aplicativos tangíveis, funcionais e excepcionais. 
+            </p>
+        </div>
+
+        <button onclick="abrirWhatsApp()">Quero criar minha Página <ion-icon name="chevron-forward"></ion-icon></button>
+
+        <div class="mockups">
+            <div class="mockup">
+                <img src="./assets/mockup.png" alt="mockup-image" class="iphone-mockup">
+                <div class="screens">
+                    <img src="./assets/sem_medo_de_voar.png" alt="" class="screen">
+                    <img src="./assets/policia_militar.png" alt="" class="screen">
+                    <img src="./assets/blackbox_more_height.png" alt="" class="screen">
+                    <img src="./assets/avafarms.png" alt="" class="screen">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="desenvolvimento-multiplataforma">
+            <h1 style="text-shadow: 0px 0px 0.3em #000;">Seu App em Android e iOS</h1>
+            <div class="logos">
+                <img src="./assets/logo-android.png" alt="">
+                <img src="./assets/logo-apple.png" alt="">
+            </div>
+            <p style="text-shadow: 0px 0px 0.3em #000;">A NextLink é especializada no desenvolvimento de páginas web personalizadas e responsivas, projetadas para elevar a sua presença online e impulsionar o seu negócio para o sucesso!</p>
+        </div>
+    </section>
+
+
+
+    <section id="motivos">
+        <h1>Por que desenvolver seu Site conosco?</h1>
+        <p>Desenvolver seu site conosco significa contar com uma equipe experiente focada em <strong>criar uma presença online única e eficaz para sua marca</strong>.<br/>Confira alguns benefícios</p>
+    
+        <div class="cards-motivos">
+
+            <div class="card-motivo">
+                <div class="icone">
+                    <i data-lucide="brain" stroke="var(--red)" width="32px" height="32px"></i>
+                </div>
+                <h2>Equipe</h2>
+                <p>Nossa equipe é formada por talentosos profissionais em design e desenvolvimento web, dedicados a criar soluções personalizadas para cada cliente.</p>
+            </div>
+
+            <div class="card-motivo">
+                <div class="icone">
+                    <i data-lucide="fast-forward" stroke="var(--red)" width="32px" height="32px"></i>
+                </div>
+                <h2>Agilidade</h2>
+                <p>Nosso domínio em tecnologias de alta performance nos auxiliam a alcançarmos uma produção rápida e eficiente de nossos projetos.</p>
+            </div>
+
+            <div class="card-motivo">
+                <div class="icone">
+                    <i data-lucide="laptop" stroke="var(--red)" width="32px" height="32px"></i>
+                </div>
+                <h2>Tecnologia</h2>
+                <p>Mergulhado no mundo de Inteligência Artificial e Tecnologias modernas, trazemos o que há de inovação e segurança para nossos clientes.</p>
+            </div>
+            
+            <div class="card-motivo">
+                <div class="icone">
+                    <i data-lucide="rocket" stroke="var(--red)" width="32px" height="32px"></i>
+                </div>
+                <h2>Inovação</h2>
+                <p>A cada dia buscamos novas formações, experiências e conceitos de mercado. O mundo tecnológico não para. Nós também não.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section id="nossos-clientes">
+        <h1>Alguns dos nossos clientes</h1>
+        <p>Firmamos parcerias com empresas e instituições incríveis que compreendem a importância de um aplicativo de qualidade para sua Marca ou Projeto</p>
+        
+        <div class="clientes-logos">
+            <img src="./assets/logo-exercito-brasileiro.webp" alt="">
+            <img src="./assets/logo-policia-militar-do-parana.png" alt="">
+            <img src="./assets/logo_jumbo.png" alt="">
+            <img src="./assets/logo-prefeitura-uniao-vitoria.webp" alt="">
+            <img src="./assets/logo-avioes-e-musicas.png" alt="">
+            <img src="./assets/logo-blackbox.png" alt="">
+            <img src="./assets/logo_sem_medo_de_voar.png" alt="">
+            <img src="./assets/logo-sud-alimentos.png" alt="">
+        </div>
+
+        <button onclick="abrirWhatsApp()">Quero me tornar cliente também <ion-icon name="chevron-forward"></ion-icon></button>
+
+        <div class="line"></div>
+    
+    </section>
+
+
+
+    <section id="nosso-processo">
+        <h1>Nosso processo de desenvolvimento</h1>
+
+        <div class="processo">
+            <div class="fase">
+                <div class="icon-box">
+                    <i data-lucide="file-search" stroke="#D9D9D9" width="28px" height="28px"></i>
+                </div>
+
+                <div class="right">
+                    <h2 class="title">Análise de Projeto</h2>
+                    <p>Nesta fase, nossa equipe de desenvolvimento analisa cada detalhe de seu projeto para encontrar o melhor caminho a ser seguido</p>
+                </div>
+            </div>
+            
+            <div class="fase">
+                <div class="icon-box">
+                    <i data-lucide="file-text" stroke="#D9D9D9" width="28px" height="28px"></i>
+                </div>
+
+                <div class="right">
+                    <h2 class="title">Escopo</h2>
+                    <p>Após análise detalhada do projeto e discussões com o cliente, elaboramos um escopo que define todos os detalhes do projeto proposto. Este escopo é revisado pelo cliente e ajustado conforme necessário, garantindo sua aprovação antes do início do desenvolvimento do projeto.</p>
+                </div>
+            </div>
+            
+            <div class="fase">
+                <div class="icon-box">
+                    <i data-lucide="pencil-ruler" stroke="#D9D9D9" width="28px" height="28px"></i>
+                </div>
+
+                <div class="right">
+                    <h2 class="title">Layout</h2>
+                    <p>Após a aprovação do escopo, seu projeto começa a ganhar vida, cores e design. Contamos com UI/UX designers extremamente qualificados para elaborar o que há de mais moderno e interativo para seu aplicativo</p>
+                </div>
+            </div>
+            
+            <div class="fase">
+                <div class="icon-box">
+                    <i data-lucide="code-xml" stroke="#D9D9D9" width="28px" height="28px"></i>
+                </div>
+
+                <div class="right">
+                    <h2 class="title">Programação</h2>
+                    <p>Nesta etapa é que a mágica acontece. Nossa equipe irá implementar as funcionalidade e recursos ao seu App. Desta forma, ele começa a funcionar. Nesta fase, integramos tudo desde o layout ao banco de dados, assim como APIs e todos os recursos necessários para que seu projeto funcione</p>
+                </div>
+            </div>
+            
+            
+            <div class="fase">
+                <div class="icon-box">
+                    <i data-lucide="clipboard-check" stroke="#D9D9D9" width="28px" height="28px"></i>
+                </div>
+
+                <div class="right">
+                    <h2 class="title">Testes</h2>
+                    <p>Após concluirmos todo o desenvolvimento, damos início a fase de testes. Nosso objetivo é garantir que seu aplicativo atenda aos mais altos padrões de qualidade e desempenho. Nesta etapa, nossa equipe de controle de qualidade executa uma série de testes abrangentes para identificar e corrigir quaisquer problemas ou falhas em seu App</p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="fase">
+                <div class="icon-box">
+                    <i data-lucide="file-up" stroke="#D9D9D9" width="28px" height="28px"></i>
+                </div>
+
+                <div class="right">
+                    <h2 class="title">Entrega e Publicação</h2>
+                    <p>Chegamos ao final do seu App. Agora iremos publicá-lo nas Lojas do Google e Apple e com isso torná-lo acessível a bilhões de usuários pelo mundo.</p>
+                </div>
+            </div>
+            
+            <div class="fase">
+                <div class="icon-box">
+                    <i data-lucide="smartphone" stroke="#D9D9D9" width="28px" height="28px"></i>
+                </div>
+
+                <div class="right">
+                    <h2 class="title">Treinamento</h2>
+                    <p>Com tudo pronto, realizamos um treinamento operacional para o cliente e sua equipe. Desta forma, cada detalhe ou dúvida de como operar o App? como arterar itens? e etc são ensinados. Agora você está pronto para ter sucesso com sua plataforma</p>
+                </div>
+            </div>
+            
+            <div class="dotted-line"></div>
+        </div>
+
+        <button onclick="abrirWhatsApp()">Entendi, quero desenvolver meu app<ion-icon name="chevron-forward"></ion-icon></button>
+
+    </section>
+
+    <section id="nossos-projetos">
+        <h1>Conheça alguns dos projetos desenvolvidos por nós</h1>
+
+        <div class="projetos">
+            <div class="projeto-wrapper">
+                <div class="projeto">
+                    <div class="projeto-header">
+                        <div class="empresa-logo">
+                            <img src="./assets/icone-avalinvest.png" alt="">
+                        </div>
+                        <div class="empresa-titulo">
+                            <h5 class="titulo">Avalinvest</h5>
+                            <p>Imobiliária especializada em imóveis agro.</p>
+                        </div>
+                    </div>
+    
+                    <div class="mockup">
+                        <div class="mockup-wrapper">
+                            <img src="./assets/mockup.png" alt="">
+                            <video autobuffer autoplay playsinline loop>
+                                <source src="./assets/video_exemplo.webm" type="video/webm">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                        </div>
+                    </div>
+    
+                    <div class="sobre">
+                        <h5>Sobre</h5>
+                        <p>O aplicativo “Avafarms” visa centralizar os imóveis agro da região centro-sul do Paraná, criando melhores  oportunidades de venda desses imóveis e agilizando o processo, assim beneficiando os proprietários atuais dos imóveis. O aplicativo também conta com planos para corretores intermediarem as vendas destes imóveis, criando assim novas oportunidades de emprego na região também.</p>
+                    </div>
+
+                    <div class="lojas-botoes">
+                        <button onclick="window.open('https://apps.apple.com/bw/app/avafarms/id6476989682?platform=iphone', '_blank')"><ion-icon name="logo-apple"></ion-icon></button>
+                        <button onclick="window.open('', '_blank')"><ion-icon name="logo-google-playstore"></ion-icon></button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="projeto-wrapper">
+                <div class="projeto">
+                    <div class="projeto-header">
+                        <div class="empresa-logo logo-escura">
+                            <img src="./assets/icone-black-box.png" alt="">
+                        </div>
+                        <div class="empresa-titulo">
+                            <h5 class="titulo">Blackbox</h5>
+                            <p>Aplicativo desenvolvido para a LitoGroup.</p>
+                        </div>
+                    </div>
+    
+                    <div class="mockup">
+                        <div class="mockup-wrapper">
+                            <img src="./assets/mockup.png" alt="">
+                            <video autobuffer autoplay playsinline loop>
+                                <source src="./assets/video_exemplo.webm" type="video/webm">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                        </div>
+                    </div>
+    
+                    <div class="sobre">
+                        <h5>Sobre</h5>
+                        <p>O aplicativo “Blackbox” é uma plataforma que condensa os conteúdos do influenciador e Youtuber Lito do canal "Aviões e Músicas" a plataforma conta com diversos vídeos exclusivos do Youtuber além das séries mais amadas pelos fãs do canal.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button onclick="redirectWhatsapp('41999121863')">Quero desenvolver meu app também <ion-icon name="chevron-forward"></ion-icon></button>
+
+        <div class="line"></div>
+    </section>
+
+
+
+    <section id="depoimentos-clientes">
+        <div class="titulo">
+            <h1>Veja o que falam sobre nós</h1>
+            <p>Dentro da NextLink o cliente é nossa principal métrica de qualidade</p>
+        </div>
+
+        <div class="depoimentos">
+
+            <div class="depoimento-wrapper">
+                <div class="depoimento">
+                    <div class="depoimento-header">
+                        <div class="picture">
+                            <img src="./assets/logo-exercito-brasileiro.webp" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Exército Brasileiro</h3>
+                            <p>Plataforma de Gestão de Concurso</p>
+                        </div>
+                    </div>
+                    <p>“Por se tratar de uma instituição Federal, possuímos algumas particularidades. Sejam elas burocráticas ou de integrações com Plataformas do governo. Além de tudo isso, é de extrema importância a aplicação da LGPD e segurança de dados. Tudo isso foi realizado com louvor pela equipe e seguimos assim mais de 3 anos de parceria para o gerenciamento de nosso concurso. Brasil!“</p>
+                </div>
+            </div>
+            
+            <div class="depoimento-wrapper">
+                <div class="depoimento">
+                    <div class="depoimento-header">
+                        <div class="picture">
+                            <img src="./assets/icone-avalinvest.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Avalinvest</h3>
+                            <p>Imobiliária especializada Agronegócios</p>
+                        </div>
+                    </div>
+                    <p>“Meu ramo de atividade é bem específico. Por isso sempre tive medo de iniciar meu projeto. Porém, quando encontrei a VegasOn, desde a primeira reunião a equipe me passou profunda segurança, sempre esclarecendo todas as minhas dúvidas e dando sugestões. É como se eles sempre tivessem trabalhado no ramo kkk. Resultado, meu projeto ficou incrível e exatamente como deveria. Aliás, melhor do que eu havia previsto. Obrigado a todos pelo empenho“</p>
+                </div>
+            </div>
+
+            
+
+            <div class="depoimento-wrapper">
+                <div class="depoimento">
+                    <div class="depoimento-header">
+                        <div class="picture">
+                            <img src="./assets/logo-policia-militar-do-parana.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Polícia Militar do Paraná</h3>
+                            <p>Aplicativo para Colégio Militar</p>
+                        </div>
+                    </div>
+                    <p>“Iniciamos nossa parceria com a VegasOn Há 4 anos. O primeiro desafio foi para que ela realizasse o desenvovimento de um Aplicativo e Software para gerenciar nosso maior colégio no estado do Paraná. O projeto deu tão certo que agora estamos expandindo para os demais colégios do estado. Eficiência e alta performance é o que os define em nossa visão“</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <button onclick="abrirWhatsApp()">Quero me tornar um cliente também <ion-icon name="chevron-forward"></ion-icon></button>
+    </section>
+
+    
+
+
+    
+
+    <section id="perguntas-frequentes">
+        <div class="top">
+            <div class="titulo">
+                <h1>Perguntas frequentes</h1>
+                <p>Aqui você encontrará eventuais dúvidas que surgirão antes de desenvolver seu aplicativo conosco</p>
+            </div>
+
+        </div>
+
+        <div class="perguntas-respostas">
+
+            <details class="pergunta">
+                <summary>
+                    Meu aplicativo funcionará em Android quanto IOS?
+                </summary>
+
+                <p>Todos os aplicativos desenvolvidos por nós são programados para funcionar tanto em Android como em dispositivos iOS</p>
+            </details>
+            
+             <details class="pergunta">
+                <summary>
+                    Preciso ter CNPJ para fazer um aplicativo?
+                </summary>
+
+                <p>Não. Tanto para a contratação do desenvolvimento, como para a publicação nas lojas do Google e Apple, não é obrigatório o uso de CNPJ. Pode ser realizado como Pessoa Física também</p>
+            </details>
+
+            <details class="pergunta">
+                <summary>
+                    Quanto custa Desenvolver um app?
+                </summary>
+
+                <p>Cada aplicativo é único e exclusivamente desenvolvido para o cliente. Sendo assim, para podermos realizar um orçamento necessitamos levantar algumas informações como: haverá vendas no app? será integrado a algum sistema? precisa de geolocalização, inteligência artificial como robôs?Em posse dessas informações, conseguimos gerar um orçamento preciso de investimentos necessários para seu projeto</p>
+            </details>
+            
+            <details class="pergunta">
+                <summary>
+                    Vou poder adiminstrá-lo através de algum painel?
+                </summary>
+
+                <p>Sim. Todos os Nossos aplicativos contam com dashboard administrativa. Assim, você poderá monitorar e realizar ajustes em seu app quando quiser.</p>
+            </details>
+
+            <details class="pergunta">
+                <summary>
+                    Receberei algum treinamento?
+                </summary>
+
+            <p>Sim. Ao concluirmos o aplicativo, realizamos um treinamento para todas as pessoas que irão operá-lo administrativamente. Assim, cada colaborador seu aprenderá como utilizar recursos e realizar operações necessárias em seu App ou Dashboard</p>
+            </details>
+            
+            <details class="pergunta">
+                <summary>
+                    Há custos para colocar meu app nas lojas?
+                </summary>
+
+                <p>Hoje contamos com duas grandes lojas no mundo: Google e Apple. Para os apps ficarem disponíveis nessas lojas há um custo pago DIRETAMENTE a essas duas empresas. Para o Google você pagará uma única vez a quantia de $25 (dólares) e para a Apple haverá um custo Anual de $99 (dólares)</p>
+            </details>
+            
+            <details class="pergunta">
+                <summary>
+                    O app será totalmente meu ao concluir?
+                </summary>
+
+                <p>Sim. Toda a propriedade intelectual e códigos do projeto são exclusivamente do cliente. Isso tudo firmamos em contrato, deixando assim sempre transparente nosso desenvolvimento e aumentando sua segurança com seu projeto</p>
+            </details>
+            
+            
+            <details class="pergunta">
+                <summary>
+                    Meu aplicativo é desenvolvido de acordo com a LGPD?
+                </summary>
+
+                <p>Sim. Nossos projetos são desenvolvidos respeitando estritamente a Lei Geral de Proteção aos Dados - LGPD. A segurança e privacidade de dados é algo muito importante e levamos isso muito a sério</p>
+            </details>
+            
+            <details class="pergunta">
+                <summary>
+                    É necessário pagar mensalmente por manutenção?
+                </summary>
+
+                <p>Não. Isso é optativo de cada cliente. Nós possuímos planos de manutenção mensal de projetos, mas isso é livre ao cliente. Você pode, por exemplo, realizar apenas manutenções pontuais em seu aplicativo</p>
+            </details>
+            
+            
+            <details class="pergunta">
+                <summary>
+                    Posso integrá-lo a plataformas como Google Maps, Whatsapp, pagamentos ou outras APIs?
+                </summary>
+
+                <p>Sim. Seu app será integrados as plataformas necessárias para seu pleno funcionamento, sempre pensando em qualidade e melhor experiência do usuário</p>
+            </details>
+            
+            
+            <div class="top">
+                <div class="titulo">
+                    <br/><p>Caso sua dúvida não seja saciada, entre em contato conosco no botão abaixo</p>
+                </div>
+
+                <button onclick="abrirWhatsApp()">Tire suas dúvidas <ion-icon name="chevron-forward"></ion-icon></button>
+
+            </div>
+            
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="left">
+            <div class="title">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="">
+                    <p>Soluções em Softwares e Páginas Web</p>
+                </div>
+                <p class="cnpj"><strong></strong></p>
+            </div>
+
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/nextlink.oficial/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a onclick="abrirWhatsApp()" ><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="https://www.facebook.com/nextlink.oficial"><ion-icon name="logo-facebook"></ion-icon></a>
+                <!-- <a href=""><ion-icon name="logo-youtube"></ion-icon></a> -->
+            
+            </div>
+        </div>
+
+        <div class="right">
+
+            <a class="contato-wrapper" onclick="abrirWhatsApp()" >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                (41) 9991-4736
+            </a>
+
+            <a href="mailto:nextlink018@gmail.com" class="contato-wrapper">
+                <ion-icon name="mail"></ion-icon>
+                nextlink018@gmail.com
+            </a>
+
+            <a href="https://maps.app.goo.gl/S2N9HhoCqKo9CmX98" class="contato-wrapper">
+                <ion-icon name="location-sharp"></ion-icon>
+                Curitiba/PR
+            </a>
+
+            
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="./script.js"></script>
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Ionic -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Arquivos JS do Slick versão 1.9 -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.projetos').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: true,
+                dots: true,
+                speed: 700
+            });
+
+            $('.depoimentos').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 1, // Por exemplo, mostrar 2 slides em telas menores que 700px
+                            slidesToScroll: 1 // Você pode ajustar as configurações conforme necessário
+                        }
+                    }
+                    // Adicione mais objetos de configuração conforme necessário para outros breakpoints
+                ]
+            });
+        });
+    </script>
+
+    <!-- Smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        // Inicializar Smooth Scroll
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800, // Velocidade de rolagem (em milissegundos)
+            offset: 96 // Deslocamento para compensar o cabeçalho fixo (opcional)
+        });
+    </script>
+
+</body>
+</html>
