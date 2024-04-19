@@ -532,7 +532,7 @@ img.mobile{
 
     transform: scale(1.015);
 
-    /* border: 1px solid var(--light); */
+    border: 1px solid var(--light);
     transition: 0.7s;
 }
 
@@ -950,7 +950,7 @@ img.mobile{
 
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 
     padding: 12px 16px;
 
@@ -965,7 +965,7 @@ img.mobile{
 }
 
 .depoimento-header .picture{
-    background: var(--white);
+    /* background: var(--white); */
 
     display: flex;
     justify-content: center;
@@ -993,8 +993,7 @@ img.mobile{
 
 .depoimento > p{
     font-weight: 300;
-    font-size: 14px;
-    margin-top: 30px;
+    font-size: 13px;
     font-style: italic;
 }
 
