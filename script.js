@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
 function redirectWhatsapp(whatsapp){
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
   
-        window.open('https://api.whatsapp.com/send?phone='+whatsapp+'&text=Olá, gostaria de desenvolver meu aplicativo personalizado', '_blank');
+        window.open('https://api.whatsapp.com/send?phone='+whatsapp+'&text=Olá, gostaria de desenvolver meu Web Site personalizado!', '_blank');
   
     } 
     else {
-        window.open('https://web.whatsapp.com/send?phone='+whatsapp+'&text=Olá, gostaria de desenvolver meu aplicativo personalizado', '_blank');
+        window.open('https://web.whatsapp.com/send?phone='+whatsapp+'&text=Olá, gostaria de desenvolver meu Web Site personalizado!', '_blank');
         
     }
   
