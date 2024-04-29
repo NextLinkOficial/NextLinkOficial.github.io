@@ -13,7 +13,6 @@
 
 }
 
-
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -357,6 +356,8 @@ img.mobile{
 
     font-weight: 700;
 
+    text-align: center;
+
 }
 
 .titulo-e-subtitulo h2{
@@ -393,6 +394,11 @@ img.mobile{
 #landing .mockups{
     display: flex;
     justify-content: center;
+
+
+    height: 816px;
+
+    position: relative;
 }
 
 .mockups .mockup{
@@ -403,20 +409,38 @@ img.mobile{
     background: var(--background);
     border-radius: 40px;
 
-    height: 532px;
+    height: 440px;
+
+    margin-top: 60%;
 
     z-index: -1;
 }
 
+.desktop-mockup{
+    display: none;
+
+    width: 98vw;
+    height: 848px;
+    object-fit: contain;
+
+    z-index: -1;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
 .mockup .iphone-mockup{
-    height: 532px;
+    height: 440px;
     z-index: 2;
 
 }
 
 .mockup .screens{
     width: 100%;
-    min-height: 532px;
+    min-height: 440px;
 
     position: absolute;
     top: 0;
@@ -1380,12 +1404,16 @@ footer .right{
 
     .titulo-e-subtitulo h1{
         font-size: 48px;
+        text-align: center;
     }
 
     .titulo-e-subtitulo h2{
         font-size: 32px;
     }
 
+    .desktop-mockup{
+        display: block;
+    }
     
     .desenvolvimento-multiplataforma h1{
         font-size: 30px;
