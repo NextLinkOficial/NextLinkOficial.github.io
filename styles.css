@@ -257,6 +257,8 @@ section{
 }
 
 #landing .div{
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -396,9 +398,12 @@ img.mobile{
     justify-content: center;
 
 
-    height: 816px;
+    width: 100%;
+    height: 848px;
 
-    position: relative;
+    /* position: relative; */
+
+    margin-top: 16px;
 }
 
 .mockups .mockup{
@@ -411,17 +416,17 @@ img.mobile{
 
     height: 440px;
 
-    margin-top: 60%;
 
-    z-index: -1;
+    z-index: 1;
 }
 
 .desktop-mockup{
     display: none;
 
-    width: 98vw;
+    /* width: 98vw; */
     height: 848px;
-    object-fit: contain;
+    /* object-fit: cover; */
+    /* aspect-ratio: 1/4; */
 
     z-index: -1;
 
@@ -430,6 +435,8 @@ img.mobile{
     top: 50%;
 
     transform: translate(-50%, -50%);
+
+    padding: 40px 32px;
 }
 
 .mockup .iphone-mockup{
