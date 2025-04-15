@@ -92,7 +92,7 @@ header{
     width: 100%;
     position: fixed;
     z-index: 10;
-    top: 16px;
+    top: 24px;
 
     display: flex;
     flex-direction: column;
@@ -175,6 +175,12 @@ section{
 
     /* animation: scale 2s infinite linear alternate; */
 }
+
+.mobile-header > button ion-icon{
+    font-size: 22px;
+
+}
+
 
 
 .desktop-header{
@@ -400,6 +406,8 @@ img.mobile{
 
     width: 100%;
     height: 848px;
+
+    background: none;
 
     /* position: relative; */
 
@@ -1389,8 +1397,21 @@ footer .right{
         animation: scale 2s infinite alternate;
     }
 
+    .desktop-header .right button ion-icon{
+        font-size: 22px;
+        
+    }
+
     .card-and-logo img{
         height: 72px;
+    }
+
+    #landing .mockups{
+        background: none;
+        background: url(./assets/mockup-macbook.png); 
+        background-size: auto 100%; 
+        background-position: top; 
+        background-repeat: no-repeat;
     }
 
     img.desktop{
