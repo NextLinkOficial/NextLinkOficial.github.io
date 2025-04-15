@@ -1408,10 +1408,10 @@ footer .right{
 
     #landing .mockups{
         background: none;
-        background: url(./assets/mockup-macbook.png); 
+        /* background: url(./assets/mockup-macbook.png); 
         background-size: auto 100%; 
         background-position: top; 
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
     }
 
     img.desktop{
