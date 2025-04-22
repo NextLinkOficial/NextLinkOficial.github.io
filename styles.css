@@ -914,7 +914,7 @@ img.mobile{
 }
 
 .projeto .sobre{
-    text-align: center;
+    margin-top: 32px;
 
     display: flex;
     flex-direction: column;
@@ -922,13 +922,29 @@ img.mobile{
 }
 
 .projeto .sobre h5{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .projeto .sobre p{
-    line-height: 130%;
+    line-height: 140%;
     font-weight: 300;
     font-size: 13px;
+    text-align: left;
+}
+
+
+.projeto .sobre ul{
+}
+
+.projeto .sobre ul li{
+    line-height: 140%;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: left;
+    list-style: circle;
+
+    margin-left: 16px;
+
 }
 
 .projeto .lojas-botoes{

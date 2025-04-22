@@ -67,3 +67,51 @@ body{
     
     height: fit-content;
 }
+
+#landing .mockups .mockup{
+    animation: rotate 4s ease-in-out infinite alternate;
+    transform: rotate(0deg);
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(10deg);
+    }
+  }
+
+
+  @media (max-width: 700px){
+    #landing{
+        padding: 0 24px;
+        padding-top: 80px;
+        padding-bottom: 32px;
+        flex-direction: column;
+    }
+
+    #landing .left{
+        width: 100%;
+    }
+
+    #landing .left h1{
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    #landing .left > img{
+        width: 64px;
+        margin-bottom: -16px;
+    }
+
+    #landing .descricao{
+        font-size: 13px;
+        line-height: 20px;
+        width: 95%;
+    }
+
+    #landing .mockups{
+        display: none;
+    }
+  }
